@@ -1,0 +1,6 @@
+{
+  "name": "js-cypress",
+  "devDependencies": {
+    "cypress": "^15.21.1"
+  }
+}
