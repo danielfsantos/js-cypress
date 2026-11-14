@@ -5,7 +5,7 @@ describe('Pokemon', () => {
     })
 
 
-    it('deve retornar os nomes dos pokemons', () => {
+    it('GET /pokemon deve retornar status 200 e iniciar com bulbasaur, ivysaur e venusaur', () => {
         cy.request('GET', `https://pokeapi.co/api/v2/pokemon/`).then((response) => {
             expect(response.status).to.eq(200)
             expect(response.body.results[0].name).to.eq('bulbasaur')
